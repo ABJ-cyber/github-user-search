@@ -1,13 +1,149 @@
-body {
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background: #141D2F;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top{
+  
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  min-width: 30rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.top>h3{
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.search{
+  display: flex;
+  min-width: 30rem;
+  min-height: 4rem;
+  align-items: center;
+  background: #1E2A47;
+  border-radius: 15px;
+  padding: 0px 1rem;
+}
+
+.search>img{
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.search>form>input{
+  background: #1E2A47;
+  min-width: 20rem;
+  min-height: 2rem;
+}
+
+.search-btn{
+  background:  #0079FF;
+  height: 45px;
+  width: 106px;
+  color: white;
+  border-radius: 10px;
+}
+
+.search-btn:hover{
+  cursor: pointer;
+  background:  #60ABFF;
+}
+
+.search>form>input:focus{
+  outline: none;
+}
+
+.card{
+  background: #1E2A47;
+  margin-top: 1rem;
+  min-width: 31rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  color: white;
+  font-family:  "Space Mono", monospace;
+}
+
+.profile{
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.profile-pic{
+  width : 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  overflow: hidden;
+}
+
+.profile-pic>img{
+  height: 100%
+}
+
+.profile-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.link{
+  color: #0079FF;
+  font-size: 16px;
+}
+
+.bio{
+  height: 5rem;
+}
+
+.repos{
+  display: flex;
+  margin-bottom: 2rem;
+  background:#141D2F;
+  border-radius: 0.5rem;
+  min-height: 5rem;
+}
+
+.repo-child{
+  margin:auto;
+}
+
+
+.footer{
+  display: grid;
+  grid-template-columns: auto auto;
+
+}
+
+.footer-child{
+  margin: auto;
+  display: flex;
+  margin-bottom: 1rem;
+
+}
+
+.footer-child>img{
+  height: 1rem;
+  margin-right: 0.5rem;
+  text-align: left;
 }

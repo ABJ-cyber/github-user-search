@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Card from "./components/Card";
+import Search from "./components/Search";
+import UserContextProvider from "./contexts/UserContext";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContextProvider>
+      <div className="App">
+        <div className="top">
+          <h1>devfinder</h1>
+          <h3>LIGHT</h3>
+        </div>
+        <Search />
+        <Card />
+      </div>
+    </UserContextProvider>
+
+    
+    
   );
 }
 
